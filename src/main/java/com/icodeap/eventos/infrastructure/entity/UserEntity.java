@@ -1,5 +1,5 @@
 package com.icodeap.eventos.infrastructure.entity;
-
+/*
 import com.icodeap.eventos.domain.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -27,3 +27,4 @@ public class UserEntity {
     private LocalDateTime dateCreated;
 
 }
+*/

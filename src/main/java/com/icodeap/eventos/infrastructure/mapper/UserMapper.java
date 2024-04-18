@@ -1,3 +1,5 @@
+
+/*
 package com.icodeap.eventos.infrastructure.mapper;
 
 import com.icodeap.eventos.domain.User;
@@ -31,3 +33,5 @@ public interface UserMapper {
     @InheritInverseConfiguration
     UserEntity toUserEntity( User user);
 }
+
+ */

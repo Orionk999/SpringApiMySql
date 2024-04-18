@@ -1,4 +1,4 @@
-package com.icodeap.eventos.domain;
+/*package com.icodeap.eventos.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -22,4 +22,4 @@ public class User {
     private LocalDateTime dateCreated;
 
 
-}
+}*/

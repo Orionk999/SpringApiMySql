@@ -22,7 +22,9 @@ public class EventEntity {
     private String customargs2;
     private String tags;
 
-
+    /*
     @ManyToOne
     private UserEntity userEntity;
+    */
+
 }

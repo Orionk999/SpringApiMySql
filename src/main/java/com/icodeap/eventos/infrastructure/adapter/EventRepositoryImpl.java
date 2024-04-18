@@ -2,21 +2,22 @@ package com.icodeap.eventos.infrastructure.adapter;
 
 import com.icodeap.eventos.application.repository.EventRepository;
 import com.icodeap.eventos.domain.Event;
-import com.icodeap.eventos.domain.User;
+//import com.icodeap.eventos.domain.User;
 import com.icodeap.eventos.infrastructure.mapper.EventMapper;
-import com.icodeap.eventos.infrastructure.mapper.UserMapper;
+//import com.icodeap.eventos.infrastructure.mapper.UserMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public class EventRepositoryImpl implements EventRepository {
     private final EventCrudRepository eventCrudRepository;
     private final EventMapper eventMapper;
-    private final UserMapper userMapper;
+    //private final UserMapper userMapper;
 
-    public EventRepositoryImpl(EventCrudRepository eventCrudRepository, EventMapper eventMapper, UserMapper userMapper) {
+    //public EventRepositoryImpl(EventCrudRepository eventCrudRepository, EventMapper eventMapper, UserMapper userMapper) {
+    public EventRepositoryImpl(EventCrudRepository eventCrudRepository, EventMapper eventMapper) {
         this.eventCrudRepository = eventCrudRepository;
         this.eventMapper = eventMapper;
-        this.userMapper = userMapper;
+        //this.userMapper = userMapper;
     }
 
     @Override
@@ -24,10 +25,10 @@ public class EventRepositoryImpl implements EventRepository {
         return eventMapper.toEvents(eventCrudRepository.findAll());
     }
 
-    @Override
+  /*  @Override
     public Iterable<Event> getEventsByUser(User user) {
         return eventMapper.toEvents(eventCrudRepository.findByUserEntity(userMapper.toUserEntity(user)) );
-    }
+    }*/
 
     @Override
     public Event getEventById(Integer id) {
