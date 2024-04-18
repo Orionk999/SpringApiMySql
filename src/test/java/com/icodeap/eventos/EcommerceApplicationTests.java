@@ -1,10 +1,10 @@
-package com.icodeap.ecommerce;
+package com.icodeap.eventos;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EcommerceApplicationTests {
+class EventosApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -1,10 +1,10 @@
-package com.icodeap.ecommerce.infrastructure.adapter;
+package com.icodeap.eventos.infrastructure.adapter;
 
-import com.icodeap.ecommerce.application.repository.EventRepository;
-import com.icodeap.ecommerce.domain.Event;
-import com.icodeap.ecommerce.domain.User;
-import com.icodeap.ecommerce.infrastructure.mapper.EventMapper;
-import com.icodeap.ecommerce.infrastructure.mapper.UserMapper;
+import com.icodeap.eventos.application.repository.EventRepository;
+import com.icodeap.eventos.domain.Event;
+import com.icodeap.eventos.domain.User;
+import com.icodeap.eventos.infrastructure.mapper.EventMapper;
+import com.icodeap.eventos.infrastructure.mapper.UserMapper;
 import org.springframework.stereotype.Repository;
 
 @Repository

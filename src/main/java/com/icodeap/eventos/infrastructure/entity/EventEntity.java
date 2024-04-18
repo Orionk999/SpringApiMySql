@@ -1,12 +1,8 @@
-package com.icodeap.ecommerce.infrastructure.entity;
+package com.icodeap.eventos.infrastructure.entity;
 
-import com.icodeap.ecommerce.domain.User;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "events")

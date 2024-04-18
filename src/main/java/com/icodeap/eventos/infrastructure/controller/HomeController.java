@@ -1,4 +1,4 @@
-package com.icodeap.ecommerce.infrastructure.controller;
+package com.icodeap.eventos.infrastructure.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

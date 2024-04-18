@@ -1,7 +1,7 @@
-package com.icodeap.ecommerce.infrastructure.mapper;
+package com.icodeap.eventos.infrastructure.mapper;
 
-import com.icodeap.ecommerce.domain.Event;
-import com.icodeap.ecommerce.infrastructure.entity.EventEntity;
+import com.icodeap.eventos.domain.Event;
+import com.icodeap.eventos.infrastructure.entity.EventEntity;
 import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

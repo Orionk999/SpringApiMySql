@@ -1,12 +1,11 @@
-package com.icodeap.ecommerce.infrastructure.entity;
+package com.icodeap.eventos.infrastructure.entity;
 
-import com.icodeap.ecommerce.domain.UserType;
+import com.icodeap.eventos.domain.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Entity
 @Table(name = "users")

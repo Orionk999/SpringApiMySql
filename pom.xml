@@ -11,8 +11,8 @@
 	<groupId>com.icodeap</groupId>
 	<artifactId>EventosSBS</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommerce</name>
-	<description>Proyecto Ecommerce con Spring Boot</description>
+	<name>eventos</name>
+	<description>Proyecto Eventos con Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 		<version.mapstruct>1.5.2.Final</version.mapstruct>

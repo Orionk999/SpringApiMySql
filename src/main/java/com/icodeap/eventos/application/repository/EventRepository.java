@@ -1,7 +1,7 @@
-package com.icodeap.ecommerce.application.repository;
+package com.icodeap.eventos.application.repository;
 
-import com.icodeap.ecommerce.domain.Event;
-import com.icodeap.ecommerce.domain.User;
+import com.icodeap.eventos.domain.Event;
+import com.icodeap.eventos.domain.User;
 
 public interface EventRepository {
     Iterable<Event> getEvents();

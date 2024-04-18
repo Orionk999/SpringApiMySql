@@ -1,9 +1,9 @@
-package com.icodeap.ecommerce.application.service;
+package com.icodeap.eventos.application.service;
 
 
-import com.icodeap.ecommerce.application.repository.EventRepository;
-import com.icodeap.ecommerce.domain.Event;
-import com.icodeap.ecommerce.domain.User;
+import com.icodeap.eventos.application.repository.EventRepository;
+import com.icodeap.eventos.domain.Event;
+import com.icodeap.eventos.domain.User;
 
 public class EventService {
 
