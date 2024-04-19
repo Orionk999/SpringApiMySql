@@ -5,8 +5,7 @@ import com.icodeap.eventos.domain.Event;
 
 public interface EventRepository {
     Iterable<Event> getEvents();
-    //Iterable<Event> getEventsByUser(User user);
-    Event getEventById(Integer id);
+    Event getEventById(String id);
     Event saveEvent(Event event);
-    void deleteEventById(Integer id);
+    void deleteEventById(String id);
 }

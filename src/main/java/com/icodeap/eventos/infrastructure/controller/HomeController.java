@@ -1,22 +1,48 @@
 package com.icodeap.eventos.infrastructure.controller;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.icodeap.eventos.application.service.EventService;
+import com.icodeap.eventos.domain.Event;
+import org.springframework.web.bind.annotation.*;
 
-//@Controller
-//@RequestMapping("/home")
+
 @RestController
+@RequestMapping("/api")
 public class HomeController {
+    private final EventService eventService;
 
-   /* @GetMapping
-    public String home(){
-        return "home";
-    }*/
+    public HomeController(EventService eventService){
+        this.eventService = eventService;
+    }
 
-    @GetMapping("/")
-    public String inicio(){
-        return "Hola Mundo";
+    @GetMapping("/home")
+    public Iterable<Event> getHome() {
+        return  this.eventService.getEvents();
+    }
+
+    @GetMapping("/home/{id}")
+    public Object getHomeId(@PathVariable String id)
+    {
+        return this.eventService.getEventById(id);
+    }
+
+    @PostMapping("/home")
+    public Event createHome(@RequestBody Event event) {
+        return this.eventService.saveEvent(event);
+    }
+
+    @PutMapping("/home/{id}")
+    public Object updateHome(@PathVariable String id,@RequestBody Event event) {
+    return this.eventService.saveEvent(event);
+    }
+
+
+    @DeleteMapping("/home/{id}")
+    public String deleteHome(@PathVariable String id) {
+        try {
+            this.eventService.deleteEvenById(id);
+        }catch (Exception e){
+            return "Elemento no encontrado";
+        }
+        return "Elemento eliminado";
     }
 }

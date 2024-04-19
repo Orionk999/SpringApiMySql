@@ -2,9 +2,11 @@ package com.icodeap.eventos.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @AllArgsConstructor
+@NoArgsConstructor
 public class Event {
     private String sg_message_id;
     private String response;

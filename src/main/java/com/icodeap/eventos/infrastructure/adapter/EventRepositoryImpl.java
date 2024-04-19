@@ -2,8 +2,11 @@ package com.icodeap.eventos.infrastructure.adapter;
 
 import com.icodeap.eventos.application.repository.EventRepository;
 import com.icodeap.eventos.domain.Event;
+import com.icodeap.eventos.infrastructure.entity.EventEntity;
 import com.icodeap.eventos.infrastructure.mapper.EventMapper;
 import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
 
 @Repository
 public class EventRepositoryImpl implements EventRepository {
@@ -21,7 +24,7 @@ public class EventRepositoryImpl implements EventRepository {
     }
 
     @Override
-    public Event getEventById(Integer id) {
+    public Event getEventById(String id) {
         return eventMapper.toEvent(eventCrudRepository.findById(id).get());
     }
 
@@ -31,7 +34,7 @@ public class EventRepositoryImpl implements EventRepository {
     }
 
     @Override
-    public void deleteEventById(Integer id) {
+    public void deleteEventById(String id) {
         eventCrudRepository.deleteById(id);
     }
 }

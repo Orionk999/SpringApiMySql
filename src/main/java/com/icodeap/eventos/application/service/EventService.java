@@ -4,6 +4,9 @@ package com.icodeap.eventos.application.service;
 import com.icodeap.eventos.application.repository.EventRepository;
 import com.icodeap.eventos.domain.Event;
 
+import javax.swing.text.html.Option;
+import java.util.Optional;
+
 public class EventService {
 
     private final EventRepository eventRepository;
@@ -16,18 +19,22 @@ public class EventService {
         return  eventRepository.getEvents();
     }
 
-    public Event getEventById(Integer id){
-        return  eventRepository.getEventById(id);
+    public Object getEventById(String id){
+        try {
+            return eventRepository.getEventById(id);
+
+            }catch (Exception e ){
+                System.out.println( e.toString());
+            }
+        return "Elemento no encontrado";
     }
 
     public Event saveEvent(Event event){
         return   eventRepository.saveEvent(event);
     }
 
-    public void deleteEvenById(Integer id){
+    public void deleteEvenById(String id){
         eventRepository.deleteEventById(id);
     }
-
-
 
 }
