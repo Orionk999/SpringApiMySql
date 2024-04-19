@@ -19,6 +19,10 @@ la base de datos eventosSBS la tabla eventos.
 
 ![img_1.png](img_1.png)
 
+
+Esta API REST se realiza utilizando arquitectura hexagonal e inyección de dependencias. 
+
+
 POST
 http://127.0.0.1:9090/api/home
 Request
