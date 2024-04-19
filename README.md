@@ -4,8 +4,8 @@
 
 ## Instrucciones
 
-Para un correcto funcionamiento se debe utilizar una base de datos postgresql, despues de creada la base 
-de datos eventosSBS el codigo creara la tabla necesaria.
+Para un correcto funcionamiento, se debe utilizar una base de datos PostgreSQL. Después de haber creado la base 
+de datos eventosSBS, el código creará la tabla necesaria.
 
 
 spring.datasource.url = jdbc:postgresql://localhost:5432/eventosSBS
@@ -14,8 +14,8 @@ spring.datasource.username = daniel
 
 spring.datasource.password = 123456
 
-Clona el aplicativo, compilalo y ejecutalo con Java 17, deberea funcionar correctamente y se creara la BD EventosSBS 
-con la tabla eventos.
+Clona la aplicación, compílala y ejecútala con Java 17. Debería funcionar correctamente y se creará en 
+la base de datos eventosSBS la tabla eventos.
 
 ![img_1.png](img_1.png)
 
